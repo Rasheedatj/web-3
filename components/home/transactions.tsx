@@ -37,7 +37,7 @@ const Transactions = () => {
     <View className=''>
       <ScrollView
         horizontal={true}
-        className='mt-10 mb-3'
+        className='mt-12 mb-3'
         showsHorizontalScrollIndicator={false}
       >
         {menu.map((item) => (
