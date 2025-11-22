@@ -1,50 +1,35 @@
-# Welcome to your Expo app 👋
+# Web3 UI
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern UI for a modern web3 mobile app that works on iOS and andrioid
 
-## Get started
+## 🧠 Overview
 
-1. Install dependencies
+Converted a figma design into a pixel perfect mobile application that works on iOS and Android. Implemented a dark and cool theme fit for web3 applications. Implemented adaptiveness so the app is usable accross all mobile devices.
 
-   ```bash
-   npm install
-   ```
+## 🎨 Features
 
-2. Start the app
+- Pixel perfect figma conversion
+- Smooth navigations
+- Modern float bar
 
-   ```bash
-   npx expo start
-   ```
+## 💻 Tech Stack
 
-In the output, you'll find options to open the app in a
+- React Native
+- Native wind (Tailwind css for React Native)
+- Expo
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Screenshots
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![App Screenshot](/assets//images//web3home.png)
+![App Screenshot](/assets//images//greengradient.png)
+![App Screenshot](/assets//images//keyboard.png)
 
-## Get a fresh project
+## 🚀 About Me
 
-When you're ready, run:
+I am a frontend engineer. I help founders and business owners build websites and mobile applications that Attract Users, keep users, and generate sales. Have an exciting project? Send me an email or book a call in the contact section
 
-```bash
-npm run reset-project
-```
+## 🔗 Links
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://instantfind.me/rashedatj)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rashedat-jinadu/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/RashedatJ)

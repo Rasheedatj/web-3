@@ -1,10 +1,10 @@
 import { IconButtonI } from '@/utils/types';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 
-const IconButton = ({ icon, title, size = 'small' }: IconButtonI) => {
+const IconButton = ({ icon, title, size = 'small', onPress }: IconButtonI) => {
   return (
-    <View className=''>
+    <Pressable onPress={onPress}>
       <View
         className={`bg-gray200  rounded-full items-center justify-center ${size === 'small' ? 'w-6 h-6' : 'w-16 h-16'}`}
       >
@@ -15,7 +15,7 @@ const IconButton = ({ icon, title, size = 'small' }: IconButtonI) => {
           {title}
         </Text>
       )}
-    </View>
+    </Pressable>
   );
 };
 

@@ -6,7 +6,9 @@ const Cards = () => {
   return (
     <View>
       <Text>Cards</Text>
-      <Link href='/suceess'>Go to sucess</Link>
+      <Link className='text-white' href='/suceess'>
+        Go to sucess
+      </Link>
     </View>
   );
 };
