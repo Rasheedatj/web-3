@@ -12,27 +12,27 @@ const Explore = () => {
       title: 'SOMX',
       percentage: '-1.8%',
       avatars: [
-        require('../assets/images/user.png'),
-        require('../assets/images/user2.png'),
-        require('../assets/images/user3.png'),
+        require('../../assets/images/user.png'),
+        require('../../assets/images/user2.png'),
+        require('../../assets/images/user3.png'),
       ],
     },
     {
       title: 'ROX2',
       percentage: '-10.48%',
       avatars: [
-        require('../assets/images/user.png'),
-        require('../assets/images/user2.png'),
-        require('../assets/images/user3.png'),
+        require('../../assets/images/user.png'),
+        require('../../assets/images/user2.png'),
+        require('../../assets/images/user3.png'),
       ],
     },
     {
       title: 'DOCK',
       percentage: '-9.2%',
       avatars: [
-        require('../assets/images/user.png'),
-        require('../assets/images/user2.png'),
-        require('../assets/images/user3.png'),
+        require('../../assets/images/user.png'),
+        require('../../assets/images/user2.png'),
+        require('../../assets/images/user3.png'),
       ],
     },
   ];
