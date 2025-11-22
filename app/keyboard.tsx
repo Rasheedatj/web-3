@@ -12,6 +12,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const Keyboard = () => {
   const [amount, setAmount] = useState('');
+
+  const size =
+    amount.length >= 6
+      ? 'long'
+      : amount.length > 3 && amount.length <= 5
+        ? 'medium'
+        : 'short';
+
   return (
     <View className='flex-1 px-5 pb-16 pt-20'>
       <LinearGradient
@@ -27,7 +35,9 @@ const Keyboard = () => {
             Balance: <Text className='text-white'>$150.00</Text>
           </Text>
         </View>
-        <Text className='font-bold text-6xl my-6 text-white'>
+        <Text
+          className={`font-bold my-6 text-white  ${size === 'short' && 'text-6xl'} ${size === 'medium' && 'text-4xl'} ${size === 'long' && 'text-3xl'}`}
+        >
           ${amount.length > 0 ? formatCurrency(amount) : formatCurrency('0')}
         </Text>
         <View className='flex-row items-center  bg-[#302618] border-[#3D2401] border-[1px] p-2 rounded-[21px]'>
