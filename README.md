@@ -21,6 +21,7 @@ Converted a figma design into a pixel perfect mobile application that works on i
 ## Screenshots
 
 ![App Screenshot](/assets//images//web3.png)
+![App Screenshot](/assets//images//web3_2.png)
 
 ## 🚀 About Me
 

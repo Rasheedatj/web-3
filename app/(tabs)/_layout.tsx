@@ -5,7 +5,7 @@ import Home from '@/assets/icons/Home';
 import FloatingTabBar from '@/components/ui/floating-bar';
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { Platform, StatusBar } from 'react-native';
 
 const TabsLayout = () => {
   return (
@@ -32,7 +32,7 @@ const TabsLayout = () => {
           options={{
             headerShown: false,
             sceneStyle: {
-              paddingTop: 70,
+              paddingTop: Platform.OS === 'android' ? 50 : 70,
               backgroundColor: '#151515',
               paddingHorizontal: 20,
               flex: 1,

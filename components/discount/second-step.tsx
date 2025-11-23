@@ -108,7 +108,7 @@ const SecondStep = ({ onNext }: { onNext: () => void }) => {
         </View>
       </View>
 
-      <View className='bg-gray400 pb-4 flex-1 rounded-tl-[33px] rounded-tr-[33px] px-10 py-3'>
+      <View className='bg-gray400 pb-10 flex-1 rounded-tl-[33px] rounded-tr-[33px] px-10 py-3'>
         <View className='flex-row items-center gap-3 mb-6 mt-6'>
           <Text className='font-bold text-white'>
             Explore Potential Gains (Simulation)

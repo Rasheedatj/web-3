@@ -1,7 +1,7 @@
 import Back from '@/assets/icons/back';
 import { useRouter } from 'expo-router';
 import React, { ReactNode } from 'react';
-import { Pressable, Text } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 
 interface PageTitleI {
   title: string;
@@ -11,14 +11,13 @@ interface PageTitleI {
 const PageTitle = ({ title, rightSection }: PageTitleI) => {
   const router = useRouter();
   return (
-    <Pressable
-      onPress={() => router.back()}
-      className='flex-row items-center justify-between'
-    >
-      <Back />
+    <View className='flex-row items-center justify-between'>
+      <Pressable onPress={() => router.back()}>
+        <Back />
+      </Pressable>
       <Text className='font-bold text-white text-xl'>{title}</Text>
       {rightSection}
-    </Pressable>
+    </View>
   );
 };
 

@@ -1,3 +1,5 @@
+import { Platform } from 'react-native';
+
 export const formatCurrency = (value: string) => {
   const num = Number(value);
 
@@ -8,3 +10,5 @@ export const formatCurrency = (value: string) => {
     maximumFractionDigits: 2,
   });
 };
+
+export const paddingTop = Platform.OS === 'ios' ? 20 : 16;
