@@ -8,7 +8,7 @@ export default function RootLayout() {
         headerShown: false,
       }}
     >
-      <Stack.Screen
+      {/* <Stack.Screen
         name='discount-buy'
         options={{
           contentStyle: {
@@ -18,7 +18,7 @@ export default function RootLayout() {
             flex: 1,
           },
         }}
-      />
+      /> */}
     </Stack>
   );
 }

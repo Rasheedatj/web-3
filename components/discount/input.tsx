@@ -4,7 +4,7 @@ import { Text, TextInput, View } from 'react-native';
 
 const Input = () => {
   return (
-    <View className='mt-10'>
+    <View className='px-5'>
       <Text className='text-gray500 font-medium pb-3 text-base'>
         Investment amount
       </Text>

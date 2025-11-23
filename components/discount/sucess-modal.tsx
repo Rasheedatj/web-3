@@ -2,10 +2,12 @@ import SuccessIcon from '@/assets/icons/success-icon';
 import Button from '@/components/ui/button';
 import { ModalI } from '@/utils/types';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { Modal, StyleSheet, Text, View } from 'react-native';
 
 const SuccessModal = ({ isOpen, onClose }: ModalI) => {
+  const router = useRouter();
   return (
     <Modal visible={isOpen} transparent>
       <View className='flex-1 px-5 pb-10 pt-20'>
@@ -24,7 +26,14 @@ const SuccessModal = ({ isOpen, onClose }: ModalI) => {
         </View>
         <View>
           <Button mode='flat'>Transaction Details</Button>
-          <Button onPress={onClose}>Close</Button>
+          <Button
+            onPress={() => {
+              onClose();
+              router.push('/explore');
+            }}
+          >
+            Close
+          </Button>
         </View>
       </View>
     </Modal>

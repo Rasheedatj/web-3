@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 
 const Summary = () => {
   return (
-    <View className='border-[#202020] border-t-2 mt-12 pt-12'>
+    <View className='border-[#202020] border-t-2 mt-12 pt-12 px-5'>
       <View className='bg-[#202020] rounded-3xl '>
         <Text className='px-6 py-4 text-white font-bold text-base border-b-2 border-primary'>
           Summary
