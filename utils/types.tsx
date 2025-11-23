@@ -19,3 +19,8 @@ export interface ExploreI {
   percentage: string;
   avatars: string[];
 }
+
+export interface ModalI {
+  isOpen: boolean;
+  onClose: () => void;
+}
