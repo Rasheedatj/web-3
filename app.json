@@ -5,13 +5,13 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "web3",
+    "scheme": "web32",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "buildNumber": "1.0.0",
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.web32"
+      "bundleIdentifier": "com.rashedatj.web32"
     },
     "android": {
       "versionCode": 1,
@@ -23,7 +23,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.web32"
+      "package": "com.rashedatj.web32"
     },
     "web": {
       "output": "static",
