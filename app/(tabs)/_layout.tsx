@@ -32,7 +32,7 @@ const TabsLayout = () => {
           options={{
             headerShown: false,
             sceneStyle: {
-              paddingTop: Platform.OS === 'android' ? 0 : 70,
+              paddingTop: Platform.OS === 'android' ? 50 : 70,
               backgroundColor: '#151515',
               paddingHorizontal: 20,
               flex: 1,
