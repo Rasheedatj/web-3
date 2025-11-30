@@ -9,7 +9,7 @@ import { View } from 'react-native';
 const DiscountBuyScreen = () => {
   const [step, setStep] = useState(1);
   return (
-    <View className={`flex-1 pt-${paddingTop} bg-primary`}>
+    <View className='flex-1 bg-primary' style={{ paddingTop }}>
       <View className='px-4'>
         <PageTitle title='Discount Buy' rightSection={<Info />} />
       </View>

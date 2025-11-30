@@ -5,10 +5,27 @@ import Keytab from '@/components/keytab';
 import Button from '@/components/ui/button';
 import PageTitle from '@/components/ui/page-title';
 import { formatCurrency, paddingTop } from '@/utils/helpers';
+import { handleNotification } from '@/utils/useNotification';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import * as Notifications from 'expo-notifications';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+    shouldShowBanner: true,
+    shouldShowList: true,
+  }),
+});
+
+const notificationContent = {
+  title: 'Deposit successful!',
+  body: 'Your have successfully deposited an amount',
+  data: { amount: '30', username: 'Ayo' },
+};
 
 const Keyboard = () => {
   const [amount, setAmount] = useState('');
@@ -21,7 +38,7 @@ const Keyboard = () => {
         : 'short';
 
   return (
-    <View className={`flex-1 px-5 pb-16 pt-${paddingTop}`}>
+    <View className='flex-1 px-5 pb-16' style={{ paddingTop }}>
       <LinearGradient
         colors={['#372204', '#151515']}
         style={styles.background}
@@ -55,7 +72,12 @@ const Keyboard = () => {
 
       <Keytab amount={amount} setAmount={setAmount} />
 
-      <Button mode='flat'>Deposit</Button>
+      <Button
+        mode='flat'
+        onPress={() => handleNotification(notificationContent)}
+      >
+        Deposit
+      </Button>
     </View>
   );
 };

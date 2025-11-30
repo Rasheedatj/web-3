@@ -11,4 +11,4 @@ export const formatCurrency = (value: string) => {
   });
 };
 
-export const paddingTop = Platform.OS === 'ios' ? 20 : 16;
+export const paddingTop = Platform.OS === 'ios' ? 20 * 4 : 12 * 4;
