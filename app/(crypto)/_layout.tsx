@@ -3,14 +3,11 @@ import Market from '@/assets/icons/Market';
 import Portfolio from '@/assets/icons/Portfolio';
 import SwapCrypto from '@/assets/icons/SwapCrypto';
 import { useTheme } from '@/utils/ThemeContext';
-import { darkTheme, lightTheme } from '@/utils/globalstyles';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
 const CryptoLayout = () => {
-  const { colorScheme } = useTheme();
-  const themeColor = colorScheme === 'dark' ? darkTheme : lightTheme;
-
+  const { themeColor } = useTheme();
   return (
     <Tabs
       screenOptions={{
