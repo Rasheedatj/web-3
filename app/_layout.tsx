@@ -1,10 +1,7 @@
 import ThemeProvider from '@/utils/ThemeContext';
-import Constants from 'expo-constants';
-import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import { Stack } from 'expo-router';
 import { useEffect } from 'react';
-import { Alert, Platform } from 'react-native';
 import '../global.css';
 
 export default function RootLayout() {
@@ -99,6 +96,12 @@ export default function RootLayout() {
           },
         }}
       /> */}
+        <Stack.Screen
+          name='receive-crypto'
+          options={{
+            presentation: 'modal',
+          }}
+        />
       </Stack>
     </ThemeProvider>
   );

@@ -1,9 +1,14 @@
 import React from 'react';
 import Svg, { G, Path } from 'react-native-svg';
 
-const Ethereum = () => {
+const Ethereum = (props: any) => {
   return (
-    <Svg width='46' height='46' viewBox='0 0 46 46' fill='none'>
+    <Svg
+      width={props.size ? props.size : 46}
+      height={props.size ? props.size : 46}
+      viewBox='0 0 46 46'
+      fill='none'
+    >
       <Path
         d='M45.8755 23.0005C45.8755 35.6362 35.6325 45.8795 22.997 45.8795C10.3613 45.8795 0.118164 35.6362 0.118164 23.0005C0.118164 10.365 10.3613 0.121826 22.997 0.121826C35.6324 0.121826 45.8755 10.365 45.8755 23.0005Z'
         fill='#587DE5'

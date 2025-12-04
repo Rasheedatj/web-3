@@ -9,10 +9,12 @@ export interface IconButtonI {
 
 export interface ButtonI {
   onPress?: () => void;
+  fullFlex?: boolean;
   style?: any;
   mode?: 'flat';
   children: ReactNode;
-  textColor: string;
+  textColor?: string;
+  icon?: ReactNode;
 }
 
 export interface ExploreI {

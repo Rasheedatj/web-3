@@ -1,27 +1,19 @@
 import Binance from '@/assets/icons/Binance';
 import SwapAction from '@/assets/icons/SwapAction';
 import Tether from '@/assets/icons/Tether';
+import BackHeader from '@/components/crypto/back-header';
 import Button from '@/components/ui/button';
 import { useTheme } from '@/utils/ThemeContext';
 import { AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
 import React from 'react';
-import { Text, TouchableWithoutFeedback, View } from 'react-native';
+import { Text, View } from 'react-native';
 
 const SwapScreen = () => {
   const { colorScheme } = useTheme();
-  const router = useRouter();
   return (
     <View className='flex-1 pt-20 pb-8 px-6 bg-cryptoPrimary dark:bg-black'>
       <View className='flex-1'>
-        <View className='flex-row items-center justify-between'>
-          <TouchableWithoutFeedback onPress={() => router.back()}>
-            <MaterialCommunityIcons
-              name='chevron-left'
-              color={colorScheme === 'light' ? '' : 'white'}
-              size={30}
-            />
-          </TouchableWithoutFeedback>
+        <BackHeader>
           <View className='flex-row items-center gap-6 flex-1 justify-center'>
             <View className='bg-black dark:bg-white w-auto px-[10px] py-[6px] rounded-3xl'>
               <Text className='text-xl font-bold text-white dark:text-black'>
@@ -34,12 +26,13 @@ const SwapScreen = () => {
               </Text>
             </View>
           </View>
-        </View>
+        </BackHeader>
 
         <Text className='text-center text-black text-base my-8 dark:text-white'>
           Convert one asset to another easily
         </Text>
 
+        {/* Conversion box */}
         <View className='gap-2'>
           <View className='flex-row  justify-between bg-white dark:bg-cardBg p-[14px] rounded-2xl'>
             <View className='justify-between'>
@@ -104,6 +97,7 @@ const SwapScreen = () => {
           </View>
         </View>
 
+        {/* Details */}
         <View className='bg-white dark:bg-cardBg  p-[14px] rounded-2xl mt-5'>
           <View className='flex-row items-center justify-between pb-5'>
             <Text className='text-black dark:text-white font-medium text-base'>
@@ -147,6 +141,7 @@ const SwapScreen = () => {
           </View>
         </View>
 
+        {/* Info text */}
         <View className='flex-row items-center justify-center gap-2 mt-5'>
           <AntDesign name='info-circle' size={14} color='#FF6A71' />
           <Text className='text-black dark:text-white'>

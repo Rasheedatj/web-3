@@ -12,3 +12,13 @@ export const formatCurrency = (value: string) => {
 };
 
 export const paddingTop = Platform.OS === 'ios' ? 20 * 4 : 12 * 4;
+
+export const getSize = (amount: string) => {
+  const size =
+    amount.length >= 6
+      ? 'long'
+      : amount.length > 3 && amount.length <= 5
+        ? 'medium'
+        : 'short';
+  return size;
+};

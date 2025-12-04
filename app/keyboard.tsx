@@ -2,9 +2,10 @@ import Currency from '@/assets/icons/currency';
 import Drawer from '@/assets/icons/Drawer';
 import USDT from '@/assets/icons/USDT';
 import Keytab from '@/components/keytab';
+import Amount from '@/components/ui/amount';
 import Button from '@/components/ui/button';
 import PageTitle from '@/components/ui/page-title';
-import { formatCurrency, paddingTop } from '@/utils/helpers';
+import { paddingTop } from '@/utils/helpers';
 import { handleNotification } from '@/utils/useNotification';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -30,13 +31,6 @@ const notificationContent = {
 const Keyboard = () => {
   const [amount, setAmount] = useState('');
 
-  const size =
-    amount.length >= 6
-      ? 'long'
-      : amount.length > 3 && amount.length <= 5
-        ? 'medium'
-        : 'short';
-
   return (
     <View className='flex-1 px-5 pb-16' style={{ paddingTop }}>
       <LinearGradient
@@ -53,11 +47,7 @@ const Keyboard = () => {
           </Text>
         </View>
         <View className='h-[8vh] my-2 justify-center'>
-          <Text
-            className={`font-bold   text-white  ${size === 'short' && 'text-6xl'} ${size === 'medium' && 'text-4xl'} ${size === 'long' && 'text-3xl'}`}
-          >
-            ${amount.length > 0 ? formatCurrency(amount) : formatCurrency('0')}
-          </Text>
+          <Amount amount={amount} />
         </View>
         <View className='flex-row items-center  bg-[#302618] border-[#3D2401] border-[1px] p-2 rounded-[21px]'>
           <USDT />
