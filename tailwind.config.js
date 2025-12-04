@@ -30,6 +30,7 @@ module.exports = {
         // DARK THEME
         black: '#0D0D0D',
         bg: '#14161A',
+        cryptoPrimary: '#F9FAFB',
         primaryText: '#ffffff',
         iconColor: '#A0A0A0',
         primary500: '#0B75E7',

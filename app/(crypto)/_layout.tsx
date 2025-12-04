@@ -7,7 +7,7 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 
 const CryptoLayout = () => {
-  const { themeColor } = useTheme();
+  const { themeColor, colorScheme } = useTheme();
   return (
     <Tabs
       screenOptions={{
@@ -19,8 +19,8 @@ const CryptoLayout = () => {
         },
         tabBarStyle: {
           backgroundColor: themeColor.bg,
-          height: 100,
-          paddingTop: 15,
+          height: 90,
+          paddingTop: 10,
           elevation: 0,
           borderTopWidth: 0,
         },
@@ -49,7 +49,7 @@ const CryptoLayout = () => {
         name='swap'
         options={{
           title: 'Swap',
-          tabBarIcon: () => <SwapCrypto color={themeColor.primaryText} />,
+          tabBarIcon: () => <SwapCrypto theme={colorScheme} />,
         }}
       />
       <Tabs.Screen

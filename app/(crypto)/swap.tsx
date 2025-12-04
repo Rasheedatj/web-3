@@ -1,8 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const SwapScreen = () => {
+const swap = () => {
   return <View></View>;
 };
 
-export default SwapScreen;
+export default swap;

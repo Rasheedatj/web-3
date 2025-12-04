@@ -13,6 +13,7 @@ import { formatCurrency } from '@/utils/helpers';
 import { useTheme } from '@/utils/ThemeContext';
 import { AssetType } from '@/utils/types';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import {
   FlatList,
@@ -20,6 +21,7 @@ import {
   ImageBackground,
   ScrollView,
   Text,
+  TouchableWithoutFeedback,
   View,
 } from 'react-native';
 
@@ -63,6 +65,7 @@ const data: AssetType[] = [
 ];
 
 const Index = () => {
+  const router = useRouter();
   const { themeColor, colorScheme } = useTheme();
   return (
     <View className='flex-1 pt-20 px-8 '>
@@ -123,12 +126,14 @@ const Index = () => {
               Buy
             </Text>
           </View>
-          <View className='dark:bg-cardBg bg-white w-[22%]  py-[10px] justify-center items-center gap-3 rounded-xl'>
-            <SwapCrypto theme={colorScheme} />
-            <Text className='font-medium dark:text-white text-black text-sm'>
-              Swap
-            </Text>
-          </View>
+          <TouchableWithoutFeedback onPress={() => router.push('/CryptoSwap')}>
+            <View className='dark:bg-cardBg bg-white w-[22%]  py-[10px] justify-center items-center gap-3 rounded-xl'>
+              <SwapCrypto theme={colorScheme} />
+              <Text className='font-medium dark:text-white text-black text-sm'>
+                Swap
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>
         </View>
 
         <View className='dark:bg-cardBg bg-white rounded-3xl  my-10'>

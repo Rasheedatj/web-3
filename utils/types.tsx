@@ -12,6 +12,7 @@ export interface ButtonI {
   style?: any;
   mode?: 'flat';
   children: ReactNode;
+  textColor: string;
 }
 
 export interface ExploreI {

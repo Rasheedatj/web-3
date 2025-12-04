@@ -1,9 +1,14 @@
 import React from 'react';
 import Svg, { Defs, Image, Pattern, Rect, Use } from 'react-native-svg';
 
-const Tether = () => {
+const Tether = (props: any) => {
   return (
-    <Svg width='46' height='46' viewBox='0 0 46 46' fill='none'>
+    <Svg
+      width={props.size ? props.size : '46'}
+      height={props.size ? props.size : '46'}
+      viewBox='0 0 46 46'
+      fill='none'
+    >
       <Rect width='46' height='46' fill='url(#pattern0_965_37571)' />
       <Defs>
         <Pattern
