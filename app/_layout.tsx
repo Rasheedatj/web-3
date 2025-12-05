@@ -38,8 +38,6 @@ export default function RootLayout() {
           Constants?.expoConfig?.extra?.eas?.projectId ??
           Constants?.easConfig?.projectId;
 
-        console.log(projectId);
-
         if (!projectId) {
           Alert.alert(
             'Project ID not found',
@@ -55,7 +53,6 @@ export default function RootLayout() {
               projectId,
             })
           ).data;
-          console.log('PUSH TOKEN STRING', pushTokenString);
           return pushTokenString;
         } catch (e: unknown) {
           console.log(e);

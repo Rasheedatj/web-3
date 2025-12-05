@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:35490254404:android:607f50ec0a0928557ff611",
+        "mobilesdk_app_id": "1:35490254404:android:081b40633109f5197ff611",
         "android_client_info": {
-          "package_name": "com.rashedatj.web3app"
+          "package_name": "com.rashedatj.web32"
         }
       },
       "oauth_client": [],
