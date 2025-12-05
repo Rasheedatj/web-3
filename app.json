@@ -23,7 +23,8 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.rashedatj.web32"
+      "package": "com.rashedatj.web32",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",

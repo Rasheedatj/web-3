@@ -14,7 +14,7 @@ const Actions = () => {
       id: 'AD1',
       icon: <SendCrypto theme={colorScheme} />,
       title: 'Send',
-      link: '/CryptoSend',
+      link: '/crypto-send',
     },
     {
       id: 'AD2',
@@ -32,7 +32,7 @@ const Actions = () => {
       id: 'AD4',
       icon: <SwapCrypto theme={colorScheme} />,
       title: 'Swap',
-      link: '/CryptoSwap',
+      link: '/crypto-swap',
     },
   ];
 

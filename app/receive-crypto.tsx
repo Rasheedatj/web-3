@@ -1,5 +1,4 @@
 import Ethereum from '@/assets/icons/Ethereum';
-import QR from '@/assets/icons/QR';
 import Tether from '@/assets/icons/Tether';
 import BackHeader from '@/components/crypto/back-header';
 import Button from '@/components/ui/button';
@@ -10,7 +9,7 @@ import {
   MaterialCommunityIcons,
 } from '@expo/vector-icons';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 
 const ReceiveCrypto = () => {
   const { colorScheme } = useTheme();
@@ -27,7 +26,8 @@ const ReceiveCrypto = () => {
       <View className='flex-1 mt-8'>
         <View className='dark:bg-cardBg bg-white py-[14px] px-[10px] rounded-3xl my-10 w-[85%] mx-auto'>
           <View className='justify-center items-center mb-4'>
-            <QR />
+            <Image source={require('../assets/images/QR.png')} />
+            {/* <QR /> */}
           </View>
           <View className='flex items-center justify-center gap-1'>
             <View className='flex-row items-center justify-center gap-2'>
