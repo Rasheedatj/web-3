@@ -4,24 +4,29 @@ A modern UI for a modern web3 mobile app that works on iOS and andrioid
 
 ## 🧠 Overview
 
-Converted a figma design into a pixel perfect mobile application that works on iOS and Android. Implemented a dark and cool theme fit for web3 applications. Implemented adaptiveness so the app is usable accross all mobile devices.
+Converted a figma design into a pixel perfect mobile application that works on iOS and Android. Implemented a dark and cool theme fit for web3 applications. Implemented adaptiveness so the app is usable accross all mobile devices. Created a developement build, facilitated local and push notifications.
 
 ## 🎨 Features
 
 - Pixel perfect figma conversion
 - Smooth navigations
+- Dark/light mode enabled
 - Modern float bar
+- Schedule local notifications
+- Send push notifications using Expo notification services
 
 ## 💻 Tech Stack
 
 - React Native
 - Native wind (Tailwind css for React Native)
 - Expo
+- FCM
 
 ## Screenshots
 
 ![App Screenshot](/assets//images//web3.png)
-![App Screenshot](/assets//images//web3_2.png)
+![App Screenshot](/assets//images//readme_2.png)
+![App Screenshot](/assets//images//successful_build.png)
 
 ## 🚀 About Me
 

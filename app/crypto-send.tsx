@@ -5,6 +5,7 @@ import Amount from '@/components/ui/amount';
 import Button from '@/components/ui/button';
 import { getSize } from '@/utils/helpers';
 import { useTheme } from '@/utils/ThemeContext';
+import { usePushNotification } from '@/utils/useNotification';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
@@ -13,6 +14,10 @@ const CryptoSend = () => {
   const { colorScheme } = useTheme();
   const [amount, setAmount] = useState('');
   const size = getSize(amount);
+
+  const { sendPushNotification, expoPushToken } = usePushNotification();
+
+  console.log(expoPushToken);
 
   return (
     <View className='flex-1 pt-20 pb-8 px-6 bg-cryptoPrimary dark:bg-black'>
@@ -81,6 +86,7 @@ const CryptoSend = () => {
       <Button
         style={{ backgroundColor: colorScheme === 'dark' ? '#fff' : '#0D0D0D' }}
         textColor={colorScheme === 'dark' ? '#0D0D0D' : '#ffffff'}
+        onPress={sendPushNotification}
       >
         Continue
       </Button>
